@@ -1,0 +1,10 @@
+C:\Users\Amanda de Godoi\Desktop\projetos-build\dotnet\publish\dotnet.exe
+C:\Users\Amanda de Godoi\Desktop\projetos-build\dotnet\publish\dotnet.dll
+C:\Users\Amanda de Godoi\Desktop\projetos-build\dotnet\publish\dotnet.deps.json
+C:\Users\Amanda de Godoi\Desktop\projetos-build\dotnet\publish\dotnet.runtimeconfig.json
+C:\Users\Amanda de Godoi\Desktop\projetos-build\dotnet\publish\dotnet.pdb
+C:\Users\Amanda de Godoi\Desktop\projetos-build\dotnet\publish\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+C:\Users\Amanda de Godoi\Desktop\projetos-build\dotnet\publish\Microsoft.EntityFrameworkCore.dll
+C:\Users\Amanda de Godoi\Desktop\projetos-build\dotnet\publish\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Amanda de Godoi\Desktop\projetos-build\dotnet\publish\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\Amanda de Godoi\Desktop\projetos-build\dotnet\publish\Microsoft.EntityFrameworkCore.Relational.dll
