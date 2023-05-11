@@ -31,3 +31,6 @@ C:\Users\Amanda de Godoi\Desktop\projetos-build\dotnet\obj\Debug\net7.0\dotnet.c
 C:\Users\Amanda de Godoi\Desktop\projetos-build\dotnet\bin\Debug\net7.0\publish\web.config
 C:\Users\Amanda de Godoi\Desktop\projetos-build\dotnet\bin\Debug\net7.0\publish\dotnet.deps.json
 C:\Users\Amanda de Godoi\Desktop\projetos-build\dotnet\bin\Debug\net7.0\publish\dotnet.runtimeconfig.json
+C:\Users\Amanda de Godoi\Desktop\projetos-build\dotnet\bin\Debug\net7.0\publish\publish\web.config
+C:\Users\Amanda de Godoi\Desktop\projetos-build\dotnet\bin\Debug\net7.0\publish\publish\dotnet.deps.json
+C:\Users\Amanda de Godoi\Desktop\projetos-build\dotnet\bin\Debug\net7.0\publish\publish\dotnet.runtimeconfig.json
