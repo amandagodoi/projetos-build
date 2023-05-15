@@ -1,4 +1,4 @@
-name: DemoNewCD
+name: Pipeline
 on:
   workflow_dispatch:
   
