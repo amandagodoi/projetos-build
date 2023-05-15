@@ -13,28 +13,28 @@ jobs:
       runs-on: ubuntu-latest
       environment:
         name: dev
-        url:'https://www.b3.com.br/'
+        url: 'b3.com.br'
       needs: build
       steps:
-        -name: Run a one-line script
-          run: echo Deploy dev
+      - name: Run a one-line script
+        run: echo Deploy dev
           
     deploy-hmg:
       runs-on: ubuntu-latest
       environment:
         name: hmg
-        url:'https://www.b3.com.br/'
+        url: 'b3.com.br'
       needs: deploy-dev
       steps:
-        -name: Run a one-line script
-          run: echo Deploy hmg
+      - name: Run a one-line script
+        run: echo Deploy hmg
           
-          deploy-prd:
+    deploy-prd:
       runs-on: ubuntu-latest
       environment:
         name: prd
-        url:'https://www.b3.com.br/'
+        url: 'b3.com.br'
       needs: deploy-hmg
       steps:
-        -name: Run a one-line script
-          run: echo Deploy prd
+      - name: Run a one-line script
+        run: echo Deploy prd
