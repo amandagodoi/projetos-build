@@ -13,7 +13,7 @@ jobs:
       runs-on: ubuntu-latest
       environment:
         name: dev
-        url: 'b3.com.br'
+        url: 'https://www.b3.com.br/pt_br/'
       needs: build
       steps:
       - name: Run a one-line script
@@ -23,7 +23,7 @@ jobs:
       runs-on: ubuntu-latest
       environment:
         name: hmg
-        url: 'b3.com.br'
+        url: 'https://www.b3.com.br/pt_br/'
       needs: deploy-dev
       steps:
       - name: Run a one-line script
@@ -33,7 +33,7 @@ jobs:
       runs-on: ubuntu-latest
       environment:
         name: prd
-        url: 'b3.com.br'
+        url: 'https://www.b3.com.br/pt_br/'
       needs: deploy-hmg
       steps:
       - name: Run a one-line script
