@@ -73,3 +73,6 @@ C:\Users\Amanda de Godoi\Desktop\projetos-build\dotnet\src\bin\Release\net7.0\pu
 C:\Users\Amanda de Godoi\Desktop\projetos-build\dotnet\src\bin\Release\net7.0\publish\publish\publish\publish\publish\web.config
 C:\Users\Amanda de Godoi\Desktop\projetos-build\dotnet\src\bin\Release\net7.0\publish\publish\publish\publish\publish\dotnet.deps.json
 C:\Users\Amanda de Godoi\Desktop\projetos-build\dotnet\src\bin\Release\net7.0\publish\publish\publish\publish\publish\dotnet.runtimeconfig.json
+C:\Users\Amanda de Godoi\Desktop\projetos-build\dotnet\src\bin\Release\net7.0\publish\publish\publish\publish\publish\publish\web.config
+C:\Users\Amanda de Godoi\Desktop\projetos-build\dotnet\src\bin\Release\net7.0\publish\publish\publish\publish\publish\publish\dotnet.deps.json
+C:\Users\Amanda de Godoi\Desktop\projetos-build\dotnet\src\bin\Release\net7.0\publish\publish\publish\publish\publish\publish\dotnet.runtimeconfig.json
