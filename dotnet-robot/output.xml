@@ -1,104 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.4 on win32)" generated="20230613 09:46:32.307" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.11.4 on win32)" generated="20230613 22:33:23.562" rpa="false" schemaversion="3">
 <suite id="s1" name="Dotnet" source="C:\Users\Amanda de Godoi\Desktop\projetos-build\dotnet-robot\dotnet.robot">
-<test id="s1-t1" name="Chamar index" line="9">
+<test id="s1-t1" name="Chamar index" line="10">
 <kw name="GET" library="RequestsLibrary">
 <var>${response}</var>
 <arg>http://localhost:5000/</arg>
 <doc>Sends a GET request.</doc>
-<msg timestamp="20230613 09:46:32.567" level="INFO">GET Request : url=http://localhost:5000/ 
+<msg timestamp="20230613 22:33:23.805" level="INFO">GET Request : url=http://localhost:5000/ 
  path_url=/ 
  headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20230613 09:46:32.567" level="INFO">GET Response : url=http://localhost:5000/ 
+<msg timestamp="20230613 22:33:23.805" level="INFO">GET Response : url=http://localhost:5000/ 
  status=200, reason=OK 
- headers={'Content-Type': 'text/plain; charset=utf-8', 'Date': 'Tue, 13 Jun 2023 12:46:32 GMT', 'Server': 'Kestrel', 'Transfer-Encoding': 'chunked'} 
- body=Hello World 12345! 
+ headers={'Content-Type': 'text/plain; charset=utf-8', 'Date': 'Wed, 14 Jun 2023 01:33:23 GMT', 'Server': 'Kestrel', 'Transfer-Encoding': 'chunked'} 
+ body=Hello World! B3 
  </msg>
-<msg timestamp="20230613 09:46:32.567" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20230613 09:46:32.543" endtime="20230613 09:46:32.567"/>
+<msg timestamp="20230613 22:33:23.805" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20230613 22:33:23.758" endtime="20230613 22:33:23.805"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${response.status_code}</arg>
 <arg>200</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<msg timestamp="20230613 09:46:32.573" level="INFO">Argument types are:
+<msg timestamp="20230613 22:33:23.808" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;class 'str'&gt;</msg>
-<status status="PASS" starttime="20230613 09:46:32.573" endtime="20230613 09:46:32.573"/>
+<status status="PASS" starttime="20230613 22:33:23.806" endtime="20230613 22:33:23.808"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${response.content}</arg>
-<arg>Hello World 12345!</arg>
+<arg>Hello World! B3</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<msg timestamp="20230613 09:46:32.573" level="INFO">Argument types are:
+<msg timestamp="20230613 22:33:23.810" level="INFO">Argument types are:
 &lt;class 'bytes'&gt;
 &lt;class 'str'&gt;</msg>
-<status status="PASS" starttime="20230613 09:46:32.573" endtime="20230613 09:46:32.573"/>
+<status status="PASS" starttime="20230613 22:33:23.808" endtime="20230613 22:33:23.811"/>
 </kw>
-<status status="PASS" starttime="20230613 09:46:32.543" endtime="20230613 09:46:32.573"/>
+<status status="PASS" starttime="20230613 22:33:23.757" endtime="20230613 22:33:23.812"/>
 </test>
-<test id="s1-t2" name="Listar tarefas (vazio)" line="14">
+<test id="s1-t2" name="Listar tarefas (vazio)" line="15">
 <kw name="GET" library="RequestsLibrary">
 <var>${response}</var>
 <arg>http://localhost:5000/todoitems</arg>
 <doc>Sends a GET request.</doc>
-<msg timestamp="20230613 09:46:33.429" level="INFO">GET Request : url=http://localhost:5000/todoitems 
+<msg timestamp="20230613 22:33:23.828" level="INFO">GET Request : url=http://localhost:5000/todoitems 
  path_url=/todoitems 
  headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20230613 09:46:33.429" level="INFO">GET Response : url=http://localhost:5000/todoitems 
+<msg timestamp="20230613 22:33:23.829" level="INFO">GET Response : url=http://localhost:5000/todoitems 
  status=200, reason=OK 
- headers={'Content-Type': 'application/json; charset=utf-8', 'Date': 'Tue, 13 Jun 2023 12:46:33 GMT', 'Server': 'Kestrel', 'Transfer-Encoding': 'chunked'} 
+ headers={'Content-Type': 'application/json; charset=utf-8', 'Date': 'Wed, 14 Jun 2023 01:33:23 GMT', 'Server': 'Kestrel', 'Transfer-Encoding': 'chunked'} 
  body=[] 
  </msg>
-<msg timestamp="20230613 09:46:33.429" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20230613 09:46:32.575" endtime="20230613 09:46:33.429"/>
+<msg timestamp="20230613 22:33:23.829" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20230613 22:33:23.814" endtime="20230613 22:33:23.829"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${response.status_code}</arg>
 <arg>200</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<msg timestamp="20230613 09:46:33.429" level="INFO">Argument types are:
+<msg timestamp="20230613 22:33:23.830" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;class 'str'&gt;</msg>
-<status status="PASS" starttime="20230613 09:46:33.429" endtime="20230613 09:46:33.429"/>
+<status status="PASS" starttime="20230613 22:33:23.829" endtime="20230613 22:33:23.830"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${response.content}</arg>
 <arg>[]</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<msg timestamp="20230613 09:46:33.429" level="INFO">Argument types are:
+<msg timestamp="20230613 22:33:23.831" level="INFO">Argument types are:
 &lt;class 'bytes'&gt;
 &lt;class 'str'&gt;</msg>
-<status status="PASS" starttime="20230613 09:46:33.429" endtime="20230613 09:46:33.429"/>
+<status status="PASS" starttime="20230613 22:33:23.830" endtime="20230613 22:33:23.831"/>
 </kw>
-<status status="PASS" starttime="20230613 09:46:32.575" endtime="20230613 09:46:33.433"/>
+<status status="PASS" starttime="20230613 22:33:23.813" endtime="20230613 22:33:23.832"/>
 </test>
-<test id="s1-t3" name="Adicionar tarefa" line="19">
+<test id="s1-t3" name="Adicionar tarefa" line="20">
 <kw name="Create Dictionary" library="BuiltIn">
 <var>${body}</var>
 <arg>name=separar documentacao</arg>
 <arg>isComplete=${False}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20230613 09:46:33.437" level="INFO">${body} = {'name': 'separar documentacao', 'isComplete': False}</msg>
-<status status="PASS" starttime="20230613 09:46:33.436" endtime="20230613 09:46:33.437"/>
+<msg timestamp="20230613 22:33:23.834" level="INFO">${body} = {'name': 'separar documentacao', 'isComplete': False}</msg>
+<status status="PASS" starttime="20230613 22:33:23.834" endtime="20230613 22:33:23.834"/>
 </kw>
 <kw name="Dumps" library="json">
 <var>${json}</var>
 <arg>${body}</arg>
 <doc>Serialize ``obj`` to a JSON formatted ``str``.</doc>
-<msg timestamp="20230613 09:46:33.437" level="INFO">${json} = {"name": "separar documentacao", "isComplete": false}</msg>
-<status status="PASS" starttime="20230613 09:46:33.437" endtime="20230613 09:46:33.437"/>
+<msg timestamp="20230613 22:33:23.836" level="INFO">${json} = {"name": "separar documentacao", "isComplete": false}</msg>
+<status status="PASS" starttime="20230613 22:33:23.836" endtime="20230613 22:33:23.836"/>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <var>${header}</var>
 <arg>Content-Type=application/json</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20230613 09:46:33.437" level="INFO">${header} = {'Content-Type': 'application/json'}</msg>
-<status status="PASS" starttime="20230613 09:46:33.437" endtime="20230613 09:46:33.437"/>
+<msg timestamp="20230613 22:33:23.836" level="INFO">${header} = {'Content-Type': 'application/json'}</msg>
+<status status="PASS" starttime="20230613 22:33:23.836" endtime="20230613 22:33:23.836"/>
 </kw>
 <kw name="POST" library="RequestsLibrary">
 <var>${response}</var>
@@ -106,136 +106,136 @@
 <arg>data=${json}</arg>
 <arg>headers=${header}</arg>
 <doc>Sends a POST request.</doc>
-<msg timestamp="20230613 09:46:33.809" level="INFO">POST Request : url=http://localhost:5000/todoitems 
+<msg timestamp="20230613 22:33:23.853" level="INFO">POST Request : url=http://localhost:5000/todoitems 
  path_url=/todoitems 
  headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'application/json', 'Content-Length': '53'} 
  body={"name": "separar documentacao", "isComplete": false} 
  </msg>
-<msg timestamp="20230613 09:46:33.809" level="INFO">POST Response : url=http://localhost:5000/todoitems 
+<msg timestamp="20230613 22:33:23.854" level="INFO">POST Response : url=http://localhost:5000/todoitems 
  status=201, reason=Created 
- headers={'Content-Type': 'application/json; charset=utf-8', 'Date': 'Tue, 13 Jun 2023 12:46:33 GMT', 'Server': 'Kestrel', 'Location': '/todoitems/1', 'Transfer-Encoding': 'chunked'} 
- body={"id":1,"name":"separar documentacao","isComplete":false} 
+ headers={'Content-Type': 'application/json; charset=utf-8', 'Date': 'Wed, 14 Jun 2023 01:33:23 GMT', 'Server': 'Kestrel', 'Location': '/todoitems/2', 'Transfer-Encoding': 'chunked'} 
+ body={"id":2,"name":"separar documentacao","isComplete":false} 
  </msg>
-<msg timestamp="20230613 09:46:33.809" level="INFO">${response} = &lt;Response [201]&gt;</msg>
-<status status="PASS" starttime="20230613 09:46:33.437" endtime="20230613 09:46:33.809"/>
+<msg timestamp="20230613 22:33:23.854" level="INFO">${response} = &lt;Response [201]&gt;</msg>
+<status status="PASS" starttime="20230613 22:33:23.838" endtime="20230613 22:33:23.854"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${response.status_code}</arg>
 <arg>201</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<msg timestamp="20230613 09:46:33.813" level="INFO">Argument types are:
+<msg timestamp="20230613 22:33:23.856" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;class 'str'&gt;</msg>
-<status status="PASS" starttime="20230613 09:46:33.809" endtime="20230613 09:46:33.813"/>
+<status status="PASS" starttime="20230613 22:33:23.855" endtime="20230613 22:33:23.856"/>
 </kw>
-<status status="PASS" starttime="20230613 09:46:33.433" endtime="20230613 09:46:33.813"/>
+<status status="PASS" starttime="20230613 22:33:23.833" endtime="20230613 22:33:23.857"/>
 </test>
-<test id="s1-t4" name="Listar tarefas" line="26">
+<test id="s1-t4" name="Listar tarefas" line="27">
 <kw name="GET" library="RequestsLibrary">
 <var>${response}</var>
 <arg>http://localhost:5000/todoitems</arg>
 <doc>Sends a GET request.</doc>
-<msg timestamp="20230613 09:46:33.890" level="INFO">GET Request : url=http://localhost:5000/todoitems 
+<msg timestamp="20230613 22:33:23.870" level="INFO">GET Request : url=http://localhost:5000/todoitems 
  path_url=/todoitems 
  headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20230613 09:46:33.891" level="INFO">GET Response : url=http://localhost:5000/todoitems 
+<msg timestamp="20230613 22:33:23.870" level="INFO">GET Response : url=http://localhost:5000/todoitems 
  status=200, reason=OK 
- headers={'Content-Type': 'application/json; charset=utf-8', 'Date': 'Tue, 13 Jun 2023 12:46:33 GMT', 'Server': 'Kestrel', 'Transfer-Encoding': 'chunked'} 
- body=[{"id":1,"name":"separar documentacao","isComplete":false}] 
+ headers={'Content-Type': 'application/json; charset=utf-8', 'Date': 'Wed, 14 Jun 2023 01:33:23 GMT', 'Server': 'Kestrel', 'Transfer-Encoding': 'chunked'} 
+ body=[{"id":2,"name":"separar documentacao","isComplete":false}] 
  </msg>
-<msg timestamp="20230613 09:46:33.891" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20230613 09:46:33.817" endtime="20230613 09:46:33.891"/>
+<msg timestamp="20230613 22:33:23.870" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20230613 22:33:23.859" endtime="20230613 22:33:23.870"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${response.status_code}</arg>
 <arg>200</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<msg timestamp="20230613 09:46:33.892" level="INFO">Argument types are:
+<msg timestamp="20230613 22:33:23.872" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;class 'str'&gt;</msg>
-<status status="PASS" starttime="20230613 09:46:33.891" endtime="20230613 09:46:33.894"/>
+<status status="PASS" starttime="20230613 22:33:23.871" endtime="20230613 22:33:23.872"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${response.content}</arg>
-<arg>[{"id":1,"name":"separar documentacao","isComplete":false}]</arg>
+<arg>[{"id":${tarefa_id},"name":"separar documentacao","isComplete":false}]</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<msg timestamp="20230613 09:46:33.895" level="INFO">Argument types are:
+<msg timestamp="20230613 22:33:23.874" level="INFO">Argument types are:
 &lt;class 'bytes'&gt;
 &lt;class 'str'&gt;</msg>
-<status status="PASS" starttime="20230613 09:46:33.894" endtime="20230613 09:46:33.895"/>
+<status status="PASS" starttime="20230613 22:33:23.873" endtime="20230613 22:33:23.874"/>
 </kw>
-<status status="PASS" starttime="20230613 09:46:33.815" endtime="20230613 09:46:33.896"/>
+<status status="PASS" starttime="20230613 22:33:23.858" endtime="20230613 22:33:23.874"/>
 </test>
-<test id="s1-t5" name="Deletar tarefa" line="31">
+<test id="s1-t5" name="Deletar tarefa" line="32">
 <kw name="DELETE" library="RequestsLibrary">
 <var>${response}</var>
-<arg>http://localhost:5000/todoitems/1</arg>
+<arg>http://localhost:5000/todoitems/${tarefa_id}</arg>
 <doc>Sends a DELETE request.</doc>
-<msg timestamp="20230613 09:46:34.076" level="INFO">DELETE Request : url=http://localhost:5000/todoitems/1 
- path_url=/todoitems/1 
+<msg timestamp="20230613 22:33:23.896" level="INFO">DELETE Request : url=http://localhost:5000/todoitems/2 
+ path_url=/todoitems/2 
  headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '0'} 
  body=None 
  </msg>
-<msg timestamp="20230613 09:46:34.076" level="INFO">DELETE Response : url=http://localhost:5000/todoitems/1 
+<msg timestamp="20230613 22:33:23.896" level="INFO">DELETE Response : url=http://localhost:5000/todoitems/2 
  status=200, reason=OK 
- headers={'Content-Type': 'application/json; charset=utf-8', 'Date': 'Tue, 13 Jun 2023 12:46:33 GMT', 'Server': 'Kestrel', 'Transfer-Encoding': 'chunked'} 
- body={"id":1,"name":"separar documentacao","isComplete":false} 
+ headers={'Content-Type': 'application/json; charset=utf-8', 'Date': 'Wed, 14 Jun 2023 01:33:23 GMT', 'Server': 'Kestrel', 'Transfer-Encoding': 'chunked'} 
+ body={"id":2,"name":"separar documentacao","isComplete":false} 
  </msg>
-<msg timestamp="20230613 09:46:34.076" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20230613 09:46:33.897" endtime="20230613 09:46:34.076"/>
+<msg timestamp="20230613 22:33:23.896" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20230613 22:33:23.878" endtime="20230613 22:33:23.896"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${response.status_code}</arg>
 <arg>200</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<msg timestamp="20230613 09:46:34.083" level="INFO">Argument types are:
+<msg timestamp="20230613 22:33:23.898" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;class 'str'&gt;</msg>
-<status status="PASS" starttime="20230613 09:46:34.076" endtime="20230613 09:46:34.083"/>
+<status status="PASS" starttime="20230613 22:33:23.896" endtime="20230613 22:33:23.898"/>
 </kw>
-<status status="PASS" starttime="20230613 09:46:33.896" endtime="20230613 09:46:34.085"/>
+<status status="PASS" starttime="20230613 22:33:23.876" endtime="20230613 22:33:23.899"/>
 </test>
-<test id="s1-t6" name="Listar tarefas (vazio)" line="35">
+<test id="s1-t6" name="Listar tarefas (vazio)" line="36">
 <kw name="GET" library="RequestsLibrary">
 <var>${response}</var>
 <arg>http://localhost:5000/todoitems</arg>
 <doc>Sends a GET request.</doc>
-<msg timestamp="20230613 09:46:34.093" level="INFO">GET Request : url=http://localhost:5000/todoitems 
+<msg timestamp="20230613 22:33:23.915" level="INFO">GET Request : url=http://localhost:5000/todoitems 
  path_url=/todoitems 
  headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg timestamp="20230613 09:46:34.093" level="INFO">GET Response : url=http://localhost:5000/todoitems 
+<msg timestamp="20230613 22:33:23.915" level="INFO">GET Response : url=http://localhost:5000/todoitems 
  status=200, reason=OK 
- headers={'Content-Type': 'application/json; charset=utf-8', 'Date': 'Tue, 13 Jun 2023 12:46:33 GMT', 'Server': 'Kestrel', 'Transfer-Encoding': 'chunked'} 
+ headers={'Content-Type': 'application/json; charset=utf-8', 'Date': 'Wed, 14 Jun 2023 01:33:23 GMT', 'Server': 'Kestrel', 'Transfer-Encoding': 'chunked'} 
  body=[] 
  </msg>
-<msg timestamp="20230613 09:46:34.093" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20230613 09:46:34.085" endtime="20230613 09:46:34.093"/>
+<msg timestamp="20230613 22:33:23.915" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20230613 22:33:23.902" endtime="20230613 22:33:23.915"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${response.status_code}</arg>
 <arg>200</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<msg timestamp="20230613 09:46:34.093" level="INFO">Argument types are:
+<msg timestamp="20230613 22:33:23.916" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;class 'str'&gt;</msg>
-<status status="PASS" starttime="20230613 09:46:34.093" endtime="20230613 09:46:34.093"/>
+<status status="PASS" starttime="20230613 22:33:23.915" endtime="20230613 22:33:23.916"/>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <arg>${response.content}</arg>
 <arg>[]</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<msg timestamp="20230613 09:46:34.100" level="INFO">Argument types are:
+<msg timestamp="20230613 22:33:23.917" level="INFO">Argument types are:
 &lt;class 'bytes'&gt;
 &lt;class 'str'&gt;</msg>
-<status status="PASS" starttime="20230613 09:46:34.093" endtime="20230613 09:46:34.100"/>
+<status status="PASS" starttime="20230613 22:33:23.916" endtime="20230613 22:33:23.918"/>
 </kw>
-<status status="PASS" starttime="20230613 09:46:34.085" endtime="20230613 09:46:34.100"/>
+<status status="PASS" starttime="20230613 22:33:23.901" endtime="20230613 22:33:23.919"/>
 </test>
-<status status="PASS" starttime="20230613 09:46:32.307" endtime="20230613 09:46:34.103"/>
+<status status="PASS" starttime="20230613 22:33:23.564" endtime="20230613 22:33:23.920"/>
 </suite>
 <statistics>
 <total>
@@ -248,6 +248,6 @@
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20230613 09:46:34.085" level="WARN">Multiple tests with name 'Listar tarefas (vazio)' executed in suite 'Dotnet'.</msg>
+<msg timestamp="20230613 22:33:23.900" level="WARN">Multiple tests with name 'Listar tarefas (vazio)' executed in suite 'Dotnet'.</msg>
 </errors>
 </robot>
