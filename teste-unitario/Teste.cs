@@ -19,6 +19,6 @@ public class CalculadoraTeste
     [Fact]
     public void Dividir ()
     {
-        Assert.Equal(1, Calculadora.Dividir(10, 10));
+        Assert.Equal(1, Calculadora.Somar(10, 10));
     }
 }
