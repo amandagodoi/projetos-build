@@ -1,4 +1,5 @@
 C:\Users\Amanda de Godoi\Desktop\projetos-build\dotnet\src\publish\dotnet.exe
+C:\Users\Amanda de Godoi\Desktop\projetos-build\dotnet\src\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\web.config
 C:\Users\Amanda de Godoi\Desktop\projetos-build\dotnet\src\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\web.config
 C:\Users\Amanda de Godoi\Desktop\projetos-build\dotnet\src\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\web.config
 C:\Users\Amanda de Godoi\Desktop\projetos-build\dotnet\src\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\web.config
@@ -38,6 +39,8 @@ C:\Users\Amanda de Godoi\Desktop\projetos-build\dotnet\src\publish\publish\publi
 C:\Users\Amanda de Godoi\Desktop\projetos-build\dotnet\src\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\dotnet.runtimeconfig.json
 C:\Users\Amanda de Godoi\Desktop\projetos-build\dotnet\src\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\dotnet.deps.json
 C:\Users\Amanda de Godoi\Desktop\projetos-build\dotnet\src\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\dotnet.runtimeconfig.json
+C:\Users\Amanda de Godoi\Desktop\projetos-build\dotnet\src\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\dotnet.deps.json
+C:\Users\Amanda de Godoi\Desktop\projetos-build\dotnet\src\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\publish\dotnet.runtimeconfig.json
 C:\Users\Amanda de Godoi\Desktop\projetos-build\dotnet\src\publish\dotnet.dll
 C:\Users\Amanda de Godoi\Desktop\projetos-build\dotnet\src\publish\dotnet.deps.json
 C:\Users\Amanda de Godoi\Desktop\projetos-build\dotnet\src\publish\dotnet.runtimeconfig.json
